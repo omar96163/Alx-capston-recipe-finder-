@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Nav from "./Nav";
 import Intro from "./Intro"
 import SearchBar from "./SearchBar";
-import Footer from "./footer";
+import Footer from "./Footer";
 import { Theme } from "../App";
 
 function Home() {

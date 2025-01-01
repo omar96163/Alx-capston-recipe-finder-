@@ -2,7 +2,7 @@ import React from "react";
 import { useContext, useState, useEffect } from "react";
 import { Theme } from "../App";
 import Nav from "./Nav";
-import Footer from "./footer";
+import Footer from "./Footer";
 
 function FavoriteList() {
   const darkmod = useContext(Theme);

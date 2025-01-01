@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Get from "../services/get";
+import Get from "../services/Data";
 
 function SearchBar() {
   const { register, handleSubmit, reset } = useForm();

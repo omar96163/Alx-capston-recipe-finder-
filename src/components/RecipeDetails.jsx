@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import Footer from "./footer";
+import Footer from "./Footer";
 import Nav from "./Nav";
 import { Theme } from "../App";
 
