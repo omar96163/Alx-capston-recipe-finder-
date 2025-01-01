@@ -13,7 +13,7 @@ function Nav() {
     <nav className="flex items-center justify-between">
       <Link to="/" className="flex items-center">
         <img
-          src="/images/recipe-logo.jpg"
+          src="public/Images/recipe-logo.jpg"
           alt="recipe-logo"
           className="sm:w-24 sm:h-24 w-16 h-16 rounded-full hover:scale-110 transition 
           hover:rotate-90 hover:shadow-xl opacity-80 hover:opacity-100"

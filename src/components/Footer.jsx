@@ -21,7 +21,7 @@ function Footer() {
       >
         <Link to="/" className="flex items-center gap-3 justify-center">
           <img
-            src="/images/recipe-logo.jpg"
+            src="public/Images/recipe-logo.jpg"
             alt="recipe-logo"
             className="sm:w-20 sm:h-20 w-16 h-16 rounded-full hover:scale-110 transition hover:-rotate-90 
             hover:shadow-xl opacity-80 hover:opacity-100"
@@ -38,14 +38,14 @@ function Footer() {
           <p>Contact us :</p>
           <a href="https://github.com/omar96163" title="github" target="_blank">
             <img
-              src="/images/social.png"
+              src="public/Images/social.png"
               alt="github"
               className="h-10 w-10 hover:scale-125"
             />
           </a>
           <a href="https://x.com/omaralbaz444" title="X" target="_blank">
             <img
-              src="/images/twitter.png"
+              src="public/Images/twitter.png"
               alt="X"
               className="h-6 w-6 rounded-full hover:scale-125"
             />

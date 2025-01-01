@@ -9,7 +9,7 @@ function Home() {
   const darkmod = useContext(Theme);
   return (
     <div className={`${darkmod && "dark"} font-serif`}>
-      <div className="bg-[url('images/bg-w.webp')] dark:bg-[url('images/bg-b.avif')] bg-cover bg-center ">
+      <div className="bg-[url('public/Images/bg-w.webp')] dark:bg-[url('public/Images/bg-b.avif')] bg-cover bg-center ">
         <div className=" bg-white py-5 px-3 sm:px-16 bg-opacity-20 dark:bg-black dark:bg-opacity-70 min-h-screen">
           <Nav />
           <div className="h-[2px] my-10 bg-white"></div>
