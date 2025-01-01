@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Nav from "./Nav";
-import Intro from "./intro";
+import Intro from "./Intro"
 import SearchBar from "./SearchBar";
 import Footer from "./footer";
 import { Theme } from "../App";
