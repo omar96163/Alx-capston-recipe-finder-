@@ -15,7 +15,7 @@ function RecipeDetails() {
   });
 
   const addMeal = () => {
-    const mealInfavList = favlist.find(
+    const mealInfavList = favlist && favlist.find(
       (meal) => meal.idMeal === userMeal.idMeal
     );
     if (mealInfavList) {
@@ -27,7 +27,7 @@ function RecipeDetails() {
   };
 
   const remMeal = () => {
-    const mealInfavList = favlist.find(
+    const mealInfavList = favlist && favlist.find(
       (meal) => meal.idMeal === userMeal.idMeal
     );
     if (mealInfavList) {
