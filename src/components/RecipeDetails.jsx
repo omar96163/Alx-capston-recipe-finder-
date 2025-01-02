@@ -11,16 +11,13 @@ function RecipeDetails() {
 
   const [favlist, setfavlist] = useState(() => {
     const savedList = localStorage.getItem("favlist");
-    return savedList !== "undefined" ? JSON.parse(savedList) : [];
+    return savedList === "" ? [] : JSON.parse(savedList);
   });
 
-  useEffect(() => {
-    localStorage.setItem("favlist", JSON.stringify(favlist));
-  }, [favlist]);
-
   const addMeal = () => {
-    const mealInfavList =
-      favlist && favlist.find((meal) => meal.idMeal === userMeal.idMeal);
+    const mealInfavList = favlist.find(
+      (meal) => meal.idMeal === userMeal.idMeal
+    );
     if (mealInfavList) {
       alert(`"${userMeal.strMeal}" was added to your fav list "before"`);
     } else {
@@ -30,8 +27,9 @@ function RecipeDetails() {
   };
 
   const remMeal = () => {
-    const mealInfavList =
-      favlist && favlist.find((meal) => meal.idMeal === userMeal.idMeal);
+    const mealInfavList = favlist.find(
+      (meal) => meal.idMeal === userMeal.idMeal
+    );
     if (mealInfavList) {
       setfavlist(favlist.filter((meal) => meal.idMeal !== userMeal.idMeal));
       alert(`"${userMeal.strMeal}" removed from your fav list`);
@@ -39,6 +37,10 @@ function RecipeDetails() {
       alert(`"${userMeal.strMeal}" is not in your fav list`);
     }
   };
+
+  useEffect(() => {
+    localStorage.setItem("favlist", JSON.stringify(favlist));
+  }, [favlist]);
 
   return (
     <div className={`${darkmod && "dark"} font-serif`}>
