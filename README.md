@@ -31,7 +31,7 @@ Technologies Used:
 React: For building the user interface and managing state.
 Tailwind CSS: For creating a responsive and visually appealing design.
 TheMealDB API: For fetching recipe data.
-Netlify: For hosting the application.
+vercel: For hosting the application.
 
 ** ---------------- ** ** ---------------- **
 
@@ -43,4 +43,4 @@ Enjoy preparing the dishes using the provided ingredients and instructions.
 
 ** ---------------- ** ** ---------------- **
 
-App Link :
+App Link : recipe-finder-nine-inky.vercel.app
