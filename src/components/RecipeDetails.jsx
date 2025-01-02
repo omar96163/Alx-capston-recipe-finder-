@@ -11,17 +11,14 @@ function RecipeDetails() {
 
   const [favlist, setfavlist] = useState(() => {
     const savedList = localStorage.getItem("favlist");
-
-    if (!savedList) {
-      return [];
-    }
-
-    try {
-      return JSON.parse(savedList);
-    } catch (error) {
-      return [];
-    }
+    return savedList === "" || savedList === undefined || savedList === null
+      ? JSON.parse(savedList)
+      : [];
   });
+
+  useEffect(() => {
+    localStorage.setItem("favlist", JSON.stringify(favlist));
+  }, [favlist]);
 
   const addMeal = () => {
     const mealInfavList = favlist.find(
@@ -46,10 +43,6 @@ function RecipeDetails() {
       alert(`"${userMeal.strMeal}" is not in your fav list`);
     }
   };
-
-  useEffect(() => {
-    localStorage.setItem("favlist", JSON.stringify(favlist));
-  }, [favlist]);
 
   return (
     <div className={`${darkmod && "dark"} font-serif`}>

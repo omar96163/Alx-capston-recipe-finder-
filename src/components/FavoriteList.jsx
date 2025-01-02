@@ -8,7 +8,9 @@ function FavoriteList() {
   const darkmod = useContext(Theme);
   const [favlist, setfavlist] = useState(() => {
     const savedList = localStorage.getItem("favlist");
-    return savedList === "" ? [] : JSON.parse(savedList);
+    return savedList === "" || savedList === undefined || savedList === null
+      ? []
+      : JSON.parse(savedList);
   });
 
   useEffect(() => {
