@@ -11,11 +11,15 @@ function RecipeDetails() {
 
   const [favlist, setfavlist] = useState(() => {
     const savedList = localStorage.getItem("favlist");
-    return savedList === "" ? [] : JSON.parse(savedList);
+    return savedList === ""
+      ? []
+      : savedList === null
+      ? []
+      : JSON.parse(savedList);
   });
 
   const addMeal = () => {
-    const mealInfavList = favlist && favlist.find(
+    const mealInfavList = favlist.find(
       (meal) => meal.idMeal === userMeal.idMeal
     );
     if (mealInfavList) {
@@ -27,7 +31,7 @@ function RecipeDetails() {
   };
 
   const remMeal = () => {
-    const mealInfavList = favlist && favlist.find(
+    const mealInfavList = favlist.find(
       (meal) => meal.idMeal === userMeal.idMeal
     );
     if (mealInfavList) {
