@@ -11,7 +11,7 @@ function RecipeDetails() {
 
   const [favlist, setfavlist] = useState(() => {
     const savedList = localStorage.getItem("favlist");
-    return savedList !== "undefined" ? JSON.parse(savedList) : [];
+    return savedList === null ? [] : JSON.parse(savedList);
   });
 
   useEffect(() => {
