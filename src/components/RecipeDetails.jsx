@@ -12,8 +12,8 @@ function RecipeDetails() {
   const [favlist, setfavlist] = useState(() => {
     const savedList = localStorage.getItem("favlist");
     return savedList === "" || savedList === undefined || savedList === null
-      ? JSON.parse(savedList)
-      : [];
+      ? []
+      : JSON.parse(savedList);
   });
 
   useEffect(() => {
@@ -46,8 +46,8 @@ function RecipeDetails() {
 
   return (
     <div className={`${darkmod && "dark"} font-serif`}>
-      <div className="bg-[url('/Images/bg-w.webp')] dark:bg-[url('/Images/bg-b.avif')] bg-cover bg-center ">
-        <div className=" bg-white py-5 px-3 sm:px-16 bg-opacity-20 dark:bg-black dark:bg-opacity-70">
+      <div className="bg-[url('/Images/bg-w.webp')] dark:bg-[url('/Images/bg-b.avif')] bg-cover bg-center">
+        <div className=" bg-white py-5 px-3 sm:px-16 bg-opacity-20 dark:bg-black dark:bg-opacity-70 min-h-screen max-h-full">
           <Nav />
           <div className="h-[2px] my-8 bg-white"></div>
           <div className="flex items-center justify-around flex-wrap gap-5">

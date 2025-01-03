@@ -10,7 +10,7 @@ function Home() {
   return (
     <div className={`${darkmod && "dark"} font-serif`}>
       <div className="bg-[url('/Images/bg-w.webp')] dark:bg-[url('/Images/bg-b.avif')] bg-cover bg-center ">
-        <div className=" bg-white py-5 px-3 sm:px-16 bg-opacity-20 dark:bg-black dark:bg-opacity-70 min-h-screen">
+        <div className=" bg-white py-5 px-3 sm:px-16 bg-opacity-20 dark:bg-black dark:bg-opacity-70 min-h-screen max-h-full">
           <Nav />
           <div className="h-[2px] my-10 bg-white"></div>
           <main className="lg:flex justify-between gap-8">
