@@ -36,7 +36,7 @@ function FavoriteList() {
           >
             Your Favorite Meals
           </h2>
-          <div className="lg:overflow-auto h-[280px]">
+          <div>
             {favlist.length > 0 ? (
               <div
                 className="bg-white bg-opacity-30 p-5 rounded-md lg:mx-20 dark:bg-black 
