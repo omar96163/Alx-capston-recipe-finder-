@@ -38,16 +38,16 @@ function Footer() {
           <p>Contact us :</p>
           <a href="https://github.com/omar96163" title="github" target="_blank">
             <img
-              src="/Images/social.png"
+              src="/Images/github.webp"
               alt="github"
-              className="h-10 w-10 hover:scale-125"
+              className="h-9 w-9 rounded-full hover:scale-125 transition"
             />
           </a>
           <a href="https://x.com/omaralbaz444" title="X" target="_blank">
             <img
-              src="\Images\x.avif"
+              src="/Images/x.jpeg"
               alt="X"
-              className="h-6 w-6 rounded-full hover:scale-125"
+              className="h-9 w-9 rounded-full hover:scale-125 transition"
             />
           </a>
         </div>
