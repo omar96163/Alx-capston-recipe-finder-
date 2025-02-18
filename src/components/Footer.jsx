@@ -36,14 +36,14 @@ function Footer() {
           dark:hover:shadow-md dark:bg-opacity-30 text-sm md:text-lg"
         >
           <p>Contact us :</p>
-          <a href="https://github.com/omar96163" title="github" target="_blank">
+          <a href="https://github.com/omar96163*" title="github" target="_blank">
             <img
               src="/Images/github.webp"
               alt="github"
               className="h-9 w-9 rounded-full hover:scale-125 transition"
             />
           </a>
-          <a href="https://x.com/omaralbaz444" title="X" target="_blank">
+          <a href="https://x.com/omaralbaz444*" title="X" target="_blank">
             <img
               src="/Images/x.jpeg"
               alt="X"
